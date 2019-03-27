@@ -1,4 +1,4 @@
-:{{ caddy_default_port }} {
+{{caddy_host}}{% if caddy_default_port %}:{{ caddy_default_port }}{% endif %} {
     gzip
     root {{ caddy_root }}
 }
