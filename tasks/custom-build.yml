@@ -108,7 +108,7 @@
 
 - name: CUSTOM | Copy default index.html
   copy:
-    src: index.html
+    src: blank.html
     dest: "{{ caddy_root }}"
     owner: "{{ caddy_user }}"
     group: "{{ caddy_group }}"
